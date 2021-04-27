@@ -1,3 +1,5 @@
+
+//Parte de geração do board, essa parte devo refatorar melhor!!!
 function create5PixelDefault(newLinesIndex) {
   for (let index = 0; index < 5; index += 1) {
     const newPixel = document.createElement('div');
@@ -34,37 +36,42 @@ function defineBoard() {
   const lineDivs = document.querySelectorAll('.pixel-line')
   for (let index = 5; index < lineDivs.length; index += 1) {
     document.querySelector('#pixel-board').removeChild(lineDivs[5]);
-    // document.querySelectorAll('.pixel-line')[]
   }
   createLines(boardSize);
   createPixels(boardSize);
 }
-let buttonVqv = document.querySelector('#generate-board');
-buttonVqv.addEventListener('click', defineBoard);
 
+
+let buttonBoardSize = document.querySelector('#generate-board');
+buttonBoardSize.addEventListener('click', defineBoard);
+
+//Código para selecionar a cor que vai ser usada como tinta
 const pixelColor = document.querySelectorAll('.color');
 function setAsSelected(event) {
   const pixelClicked = event;
   document.querySelectorAll('.selected')[0].className = 'color';
   pixelClicked.target.className = 'color selected';
 }
+
 for (let index = 0; index < pixelColor.length; index += 1) {
   pixelColor[index].addEventListener('click', setAsSelected);
 }
-
+//-----------------------------------------------------------
+// Código para pintar os pixels do board
 function paintPixel(event) {
   const pixelToChange = event.target;
   pixelToChange.style.backgroundColor = document.querySelectorAll('.selected')[0].id;
 }
-const pixels = document.querySelectorAll('.pixel');
-for (let index = 0; index < pixels.length; index += 1) {
-  pixels[index].addEventListener('click', paintPixel);
-}
 
+const pixels = document.querySelectorAll('.pixel');
+for (let values of pixels) {
+  values.addEventListener('click', paintPixel);
+}
+//-----------------------------------------------------------
+//Código para limpar todas as pinturas
 function clearPixels() {
-  const pixelBoard = document.querySelectorAll('.pixel');
-  for (let index = 0; index < pixelBoard.length; index += 1) {
-    pixelBoard[index].style.backgroundColor = 'white';
+  for (let values of pixels) {
+    values.style.backgroundColor = 'white';
   }
 }
 const buttonClear = document.querySelector('#clear-board');

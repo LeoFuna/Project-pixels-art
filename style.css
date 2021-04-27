@@ -26,9 +26,19 @@ body {
 }
 
 .pixel {
-  width: 40px;
-  height: 40px;
+  width: 5vw;
+  height: 5vw;
   border: 1px solid black;
   display: inline-block;
   background-color: white;
+}
+
+#clear-board {
+  margin: 10px auto;
+  background-color: rgb(238, 56, 56);
+  color: white;
+}
+
+#board-size {
+  width: 10vw;
 }
