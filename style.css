@@ -6,12 +6,10 @@
 
 body {
   text-align: center;
-  /* width: 1366px;
-  height: 768px;*/
 }
 
 header {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,32 +17,33 @@ header {
 }
 
 #title, #logo {
-  font-size: 1.3em;
+  font-size: 8vw;
   padding: 0 5px;
+}
+/* ----------------------- */
+
+#color-section {
+  
+}
+
+#sub-title, #color-palette {
+  padding: 2.5px 0;
+  font-size: 5vw;
+  font-style: italic;
 }
 
 .color {
   border: 1px solid black;
   display: inline-block;
-  width: 5vw;
-  height: 5vw;
+  width: 8.5vw;
+  height: 8.5vw;
 }
 
-#black {
-  background-color: black;
-}
-
-#blue {
-  background-color: blue;
-}
-
-#green {
-  background-color: green;
-}
-
-#magenta {
-  background-color: magenta;
-}
+#black {background-color: black;}
+#blue {background-color: blue;}
+#green {background-color: green;}
+#magenta {background-color: magenta;}
+/* ------------------------ */
 
 .pixel {
   width: 5vw;
