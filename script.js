@@ -68,11 +68,11 @@ for (let values of pixels) {
   values.addEventListener('click', paintPixel);
 }
 //-----------------------------------------------------------
-//Código para limpar todas as pinturas
-// function clearPixels() {
-//   for (let values of pixels) {
-//     values.style.backgroundColor = 'white';
-//   }
-// }
-// const buttonClear = document.querySelector('#clear-board');
-// buttonClear.addEventListener('click', clearPixels);
+// Código para limpar todas as pinturas
+function clearPixels() {
+  for (let values of pixels) {
+    values.style.backgroundColor = 'white';
+  }
+}
+const buttonClear = document.querySelector('#clear-board');
+buttonClear.addEventListener('click', clearPixels);
