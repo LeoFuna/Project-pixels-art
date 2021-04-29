@@ -1,5 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   text-align: center;
+  /* width: 1366px;
+  height: 768px;*/
+}
+
+header {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+#title, #logo {
+  font-size: 1.3em;
+  padding: 0 5px;
 }
 
 .color {

@@ -1,4 +1,4 @@
-
+// 1366 x 768
 //Parte de geração do board, essa parte devo refatorar melhor!!!
 function create5PixelDefault(newLinesIndex) {
   for (let index = 0; index < 5; index += 1) {
