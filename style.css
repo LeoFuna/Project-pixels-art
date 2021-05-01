@@ -6,15 +6,20 @@
 
 body {
   text-align: center;
+  background-color: whitesmoke;
 }
 
 header {
-  /* background-color: red; */
+  background-color: rgb(197, 197, 197);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 0;
 }
+
+.blue-letter {color: blue;}
+.green-letter {color: green;}
+.magenta-letter {color: magenta;}
 
 #title, #logo {
   font-size: 8vw;
@@ -23,7 +28,7 @@ header {
 /* ----------------------- */
 
 #color-section {
-  
+  background-color: whitesmoke;
 }
 
 #sub-title, #color-palette {
@@ -37,6 +42,7 @@ header {
   display: inline-block;
   width: 9vw;
   height: 9vw;
+  border-radius: 100%;
 }
 
 #black {background-color: black;}
@@ -46,11 +52,16 @@ header {
 /* ------------------------ */
 
 #button-section {
-  
+  background-color: whitesmoke;
 }
 
 #board-size-box {
   padding-top: 5px;
+}
+
+#board-section {
+  margin-top: 20px;
+  background-color: whitesmoke;
 }
 
 #generate-board {
