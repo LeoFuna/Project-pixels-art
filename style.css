@@ -93,7 +93,7 @@ header {
   background-color: white;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) { /* desktop responsivity */
   header {
     opacity: 80%;
   }
