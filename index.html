@@ -4,59 +4,71 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 id='title'>Paleta de Cores</h1>
-  <div id='color-palette'>
-    <div class='color selected' id="black"></div>
-    <div class='color' id='blue'></div>
-    <div class='color' id='green'></div>
-    <div class='color' id='magenta'></div>
-  </div>
-  <div>
-    <input type="text" id='board-size'>
-    <button id='generate-board'>VQV</button>
-  </div>
-  <button id='clear-board'>Limpar</button>
-  <div id='pixel-board'>
-    <div class='pixel-line'>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
+  <header>
+    <i id='logo' class="fas fa-palette"></i>
+    <h1 id='title'><span class='blue-letter'>P</span><span class='green-letter'>i</span><span class='magenta-letter'>x</span><span class=''>e</span><span class='blue-letter'>l</span> <span class="green-letter">A</span><span class='magenta-letter'>r</span><span class=''>t</span></h1>
+  </header>
+  <section id='color-section'>
+    <h4 id='sub-title'>Click to select a color to paint</h4>
+    <div id='color-palette'>
+      <div class='color selected' id="black"></div>
+      <div class='color' id='blue'></div>
+      <div class='color' id='green'></div>
+      <div class='color' id='magenta'></div>
     </div>
-    <div class='pixel-line'>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
+  </section>
+
+  <section id='button-section'>
+    <div id='board-size-box'>
+      <input type="text" placeholder="Put 1-12" id='board-size'>
+      <button id='generate-board'>Board Size</button>
     </div>
-    <div class='pixel-line'>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-    </div>
-    <div class='pixel-line'>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-    </div>
-    <div class='pixel-line'>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-      <div class='pixel'></div>
-    </div>
-  </div>
+    <button id='clear-board'>Clear</button>
+  </section>
+
+  <section id='board-section'>
+    <div id='pixel-board'>
+      <div class='pixel-line'>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+      </div>
+      <div class='pixel-line'>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+      </div>
+      <div class='pixel-line'>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+      </div>
+      <div class='pixel-line'>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+      </div>
+      <div class='pixel-line'>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+        <div class='pixel'></div>
+      </div>
+  </section>
 <script src="script.js"></script>
 </body>
 </html>
